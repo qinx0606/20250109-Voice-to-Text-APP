@@ -15,6 +15,13 @@ st.markdown("""
     您可以点击下面的 “Download” 按钮下载 Voice-to-Text APP。
 """, unsafe_allow_html=True)
 
+# 页面简介
+st.markdown("""
+    Voice-to-Text APP 是基于 [OpenAI Whisper](https://github.com/openai/whisper) 的 “turbo”、“large-v2”、“large-v3”模型而开发的一款语音转文字的APP。<br>
+    您可以点击 [Voice-to-Text APP](https://github.com/qinx0606/20250109-Voice-to-Text-APP/releases/download/Voice-to-Text-v1.0/Voice-to-Text.app.zip)进行下载。
+""", unsafe_allow_html=True)
+
+
 
 # 选择文件并提供下载链接
 # base_url = "/Users/qinxu/GitHub_files/20241216_制作语音转文字桌面app/20250109_把语音转文字的APP放到网页上供用户下载/"
