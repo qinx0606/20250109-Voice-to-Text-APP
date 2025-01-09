@@ -9,11 +9,11 @@ import os
 # 设置页面标题
 st.title('Voice-to-Text APP')
 
-# 页面简介
-st.markdown("""
-    Voice-to-Text APP 是基于 [OpenAI Whisper](https://github.com/openai/whisper) 的 “turbo”、“large-v2”、“large-v3”模型而开发的一款语音转文字的APP。<br>
-    您可以点击下面的 “Download” 按钮下载 Voice-to-Text APP。
-""", unsafe_allow_html=True)
+# # 页面简介
+# st.markdown("""
+#     Voice-to-Text APP 是基于 [OpenAI Whisper](https://github.com/openai/whisper) 的 “turbo”、“large-v2”、“large-v3”模型而开发的一款语音转文字的APP。<br>
+#     您可以点击下面的 “Download” 按钮下载 Voice-to-Text APP。
+# """, unsafe_allow_html=True)
 
 # 页面简介
 st.markdown("""
@@ -41,15 +41,15 @@ st.markdown("""
 #     st.error("文件未找到，请确保文件路径正确。")
 
 
-# GitHub LFS 存储的文件下载链接
-github_lfs_url = "https://github.com/qinx0606/20250109-Voice-to-Text-APP/releases/download/Voice-to-Text-v1.0/Voice-to-Text.app.zip"  # 替换为实际的 GitHub LFS 下载链接
-# 提供文件下载链接
-st.download_button(
-    label="⬇️ Download Voice-to-Text APP",
-    data=github_lfs_url,
-    file_name="Voice-to-Text.app.zip",
-    mime="application/octet-stream"
-)
+# # GitHub LFS 存储的文件下载链接
+# github_lfs_url = "https://github.com/qinx0606/20250109-Voice-to-Text-APP/releases/download/Voice-to-Text-v1.0/Voice-to-Text.app.zip"  # 替换为实际的 GitHub LFS 下载链接
+# # 提供文件下载链接
+# st.download_button(
+#     label="⬇️ Download Voice-to-Text APP",
+#     data=github_lfs_url,
+#     file_name="Voice-to-Text.app.zip",
+#     mime="application/octet-stream"
+# )
 
 
 st.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
