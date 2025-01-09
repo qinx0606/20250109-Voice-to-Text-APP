@@ -17,21 +17,33 @@ st.markdown("""
 
 
 # 选择文件并提供下载链接
-base_url = "/Users/qinxu/GitHub_files/20241216_制作语音转文字桌面app/20250109_把语音转文字的APP放到网页上供用户下载/"
-app_file_path = base_url+ "APP/Voice-to-Text.app.zip"  # 替换为实际文件路径
+# base_url = "/Users/qinxu/GitHub_files/20241216_制作语音转文字桌面app/20250109_把语音转文字的APP放到网页上供用户下载/"
+# app_file_path = base_url+ "APP/Voice-to-Text.app.zip"  # 替换为实际文件路径
 
-# 检查文件是否存在
-if os.path.exists(app_file_path):
-    # 提供文件下载链接
-    with open(app_file_path, "rb") as file:
-        st.download_button(
-            label="⬇️ Download　Voice-to-Text APP",
-            data=file,
-            file_name=os.path.basename(app_file_path),
-            mime="application/octet-stream"
-        )
-else:
-    st.error("文件未找到，请确保文件路径正确。")
+# # 检查文件是否存在
+# if os.path.exists(app_file_path):
+#     # 提供文件下载链接
+#     with open(app_file_path, "rb") as file:
+#         st.download_button(
+#             label="⬇️ Download　Voice-to-Text APP",
+#             data=file,
+#             file_name=os.path.basename(app_file_path),
+#             mime="application/octet-stream"
+#         )
+# else:
+#     st.error("文件未找到，请确保文件路径正确。")
+
+
+# GitHub LFS 存储的文件下载链接
+github_lfs_url = "https://github.com/yourusername/yourrepository/releases/download/v1.0/Voice-to-Text.app.zip"  # 替换为实际的 GitHub LFS 下载链接
+
+# 提供文件下载链接
+st.download_button(
+    label="⬇️ Download Voice-to-Text APP",
+    data=github_lfs_url,
+    file_name="Voice-to-Text.app.zip",
+    mime="application/octet-stream"
+)
 
 
 st.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
@@ -41,7 +53,7 @@ st.write("------------")
 # 使用 st.columns() 来创建并排布局
 col1, col2 = st.columns(2)
 # 第一列：插入第一张图片
-image_path_001 = base_url + "Picture/001.jpg"  # 替换为图片的实际路径
+image_path_001 = "Picture/001.jpg"  # 替换为图片的实际路径
 if os.path.exists(image_path_001):
     with col1:
         st.image(image_path_001, caption="Voice-to-Text APP 界面", use_container_width=True)
@@ -50,7 +62,7 @@ else:
         st.error("图片未找到，请确保文件路径正确。")
 
 # 第二列：插入第二张图片
-image_path_002 = base_url + "Picture/002.jpg"  # 替换为图片的实际路径
+image_path_002 = "Picture/002.jpg"  # 替换为图片的实际路径
 if os.path.exists(image_path_002):
     with col2:
         st.image(image_path_002, caption="Voice-to-Text APP 语音转文字示例", use_container_width=True)
