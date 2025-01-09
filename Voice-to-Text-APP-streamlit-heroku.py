@@ -35,8 +35,7 @@ st.markdown("""
 
 
 # GitHub LFS 存储的文件下载链接
-github_lfs_url = "https://github.com/yourusername/yourrepository/releases/download/v1.0/Voice-to-Text.app.zip"  # 替换为实际的 GitHub LFS 下载链接
-
+github_lfs_url = "https://github.com/qinx0606/20250109-Voice-to-Text-APP/releases/download/Voice-to-Text-v1.0/Voice-to-Text.app.zip"  # 替换为实际的 GitHub LFS 下载链接
 # 提供文件下载链接
 st.download_button(
     label="⬇️ Download Voice-to-Text APP",
